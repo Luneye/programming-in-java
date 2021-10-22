@@ -3,7 +3,7 @@ package agh.ii.prinjava.proj1;
 import agh.ii.prinjava.proj1.impl.MyQueueDLLBImpl;
 
 public interface MyQueue<E> {
-    void enqueue(E x);//adds an element on the first position of the queue
+    void enqueue(E x);//adds an element on the top position of the queue
 
     E dequeue();//deletes the last element of the queue
 

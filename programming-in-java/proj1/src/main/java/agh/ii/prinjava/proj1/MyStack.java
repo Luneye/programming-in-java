@@ -3,7 +3,7 @@ package agh.ii.prinjava.proj1;
 import agh.ii.prinjava.proj1.impl.MyStackDLLBImpl;
 
 public interface MyStack<E> {
-    E pop();//adds an element on the first position (top) of the stack
+    E pop();//adds an element on the top position of the stack
 
     void push(E x);//removes the element on the first position (top) of the stack
 

@@ -23,8 +23,8 @@ class MyQueueDLLBImplTest {
         queueOfInts.enqueue(1);
         queueOfInts.enqueue(2);
         queueOfInts.enqueue(3);
-        //Queue contains 1,2,3
-        //Should now display 1,2,3
+        //Queue contains 3,2,1
+        //Should now display 3,2,1
         System.out.println(queueOfInts.DisplayQueue());
     }
 
@@ -33,10 +33,10 @@ class MyQueueDLLBImplTest {
         queueOfInts.enqueue(1);
         queueOfInts.enqueue(2);
         queueOfInts.enqueue(3);
-        //Queue contains 1,2,3
-        //Should now display 1,2,3
+        //Queue contains 3,2,1
+        //Should now display 3,2,1
         System.out.println(queueOfInts.DisplayQueue());
-        //Dequeue and so we should now only have 1,2
+        //Dequeue and so we should now only have 3,2
         queueOfInts.dequeue();
         System.out.println(queueOfInts.DisplayQueue());
         //Let's dequeue again
@@ -71,8 +71,8 @@ class MyQueueDLLBImplTest {
         queueOfInts.enqueue(1);
         queueOfInts.enqueue(2);
         queueOfInts.enqueue(3);
-        //Queue contains 1,2,3
-        //Should display the top of the queue (3)
+        //Queue contains 3,2,1
+        //Should display the top of the queue (1)
         System.out.println(queueOfInts.peek());
     }
 
@@ -81,8 +81,8 @@ class MyQueueDLLBImplTest {
         queueOfInts.enqueue(1);
         queueOfInts.enqueue(2);
         queueOfInts.enqueue(3);
-        //Queue contains 1,2,3
-        //Should display '1->2->3->null'
+        //Queue contains 3,2,1
+        //Should display '3->2->1->null'
         System.out.println(queueOfInts.DisplayQueue());
     }
 }

@@ -13,11 +13,11 @@ public class MyQueueDLLBImpl<E> implements MyQueue<E> {
     //that can be removed
     //Thus, we will use a linked list that we will browse using the prev ref to simulate our queue
     //The top will be the first element position of this list
-    //The enqueue will be performed by adding elements on the first position of this list
+    //The enqueue will be performed by adding elements on the last position of this list
     //The dequeue will be performed by deleting elements on the first position of this list
     @Override
     public void enqueue(E x) {//method to enqueue data
-        elems.addFirst(x);//we add the data on the first position of our list elems
+        elems.addLast(x);//we add the data on the first position of our list elems
         nb_elems=nb_elems+1;//we add 1 to nb_elems as a new element is added
     }
 
